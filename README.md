@@ -1,4 +1,4 @@
-##Descripción
+## Descripción
 Este es un portafolio personal creado con el fin de mostrar mis habilidades en proyectos personales.
 esta es una página web sencilla creadad usando HTML, CSS y JavaScript
 
