@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ElectroShop - Tu tienda de electrónica</title>
+    <meta name="description" content="Encuentra los mejores productos electrónicos al mejor precio en ElectroShop.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header class="main-header">
+        <div class="container header-container">
+            <!-- Logo -->
+            <a href="index.html" class="logo">
+                <span class="material-icons logo-icon">bolt</span>
+                <span class="logo-text">ElectroShop</span>
+            </a>
+
+            <!-- Search Bar -->
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Buscar productos...">
+                <button type="button" id="searchBtn" aria-label="Buscar">
+                    <span class="material-icons">search</span>
+                </button>
+                <div class="filter-dropdown">
+                    <button type="button" id="filterBtn" aria-label="Filtros">
+                        <span class="material-icons">filter_list</span>
+                    </button>
+                    <!-- Dropdown content handled by JS/CSS -->
+                    <div class="filter-menu" id="filterMenu" hidden>
+                        <select id="categoryFilter">
+                            <option value="all">Todas las categorías</option>
+                            <option value="smartphones">Smartphones</option>
+                            <option value="laptops">Laptops</option>
+                            <option value="audio">Audio</option>
+                            <option value="accessories">Accesorios</option>
+                        </select>
+                        <select id="priceFilter">
+                            <option value="all">Todos los precios</option>
+                            <option value="low">Menos de $100</option>
+                            <option value="mid">$100 - $500</option>
+                            <option value="high">Más de $500</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- User Actions -->
+            <nav class="user-nav">
+                <a href="mi-perfil.html" class="nav-item" title="Mi Perfil">
+                    <span class="material-icons">person</span>
+                </a>
+                <a href="#" class="nav-item" title="Soporte Técnico">
+                    <span class="material-icons">headset_mic</span>
+                </a>
+                <a href="#" class="nav-item" title="Carrito">
+                    <span class="material-icons">shopping_cart</span>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="container hero-content">
+                <h1>Bienvenido a ElectroShop</h1>
+                <p>Tu destino número uno para la mejor tecnología. Innovación y calidad al alcance de tu mano.</p>
+                <a href="#products" class="cta-button">Ver Ofertas</a>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section id="products" class="products-section">
+            <div class="container">
+                <h2 class="section-title">Productos más relevantes</h2>
+                <div id="productGrid" class="product-grid">
+                    <!-- Products will be injected here by JavaScript -->
+                    <p class="loading-text">Cargando productos...</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 ElectroShop. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
