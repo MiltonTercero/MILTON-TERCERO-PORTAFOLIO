@@ -34,7 +34,7 @@ ul {
     list-style: none;
 }
 
-/* Layout Utilities */
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -156,7 +156,7 @@ ul {
     color: var(--primary-color);
 }
 
-/* Hero Section */
+
 .hero-section {
     background: linear-gradient(135deg, var(--primary-color) 0%, #0d47a1 100%);
     color: var(--white);
@@ -190,7 +190,6 @@ ul {
     transform: translateY(-2px);
 }
 
-/* Products Section */
 .products-section {
     padding: 2rem 0 4rem;
 }
@@ -208,7 +207,7 @@ ul {
     gap: 2rem;
 }
 
-/* Product Card */
+
 .product-card {
     background-color: var(--white);
     border-radius: 8px;
@@ -293,7 +292,7 @@ ul {
     font-size: 1.2rem;
 }
 
-/* Simple Responsive Media Queries */
+
 @media (max-width: 768px) {
     .header-container {
         flex-wrap: wrap;
